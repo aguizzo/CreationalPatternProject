@@ -6,9 +6,9 @@ import domain.classes.Warrior;
 import domain.classes.impl.elfs.ElfArcher;
 import domain.classes.impl.elfs.ElfMage;
 import domain.classes.impl.elfs.ElfWarrior;
-import domain.factories.SquadronFactory;
+import domain.factories.SquadronAbstractFactory;
 
-public class ElvenSquadronFactory extends SquadronFactory {
+public class ElvenSquadronFactory extends SquadronAbstractFactory {
     @Override
     public Mage createMage() {
         return new ElfMage();

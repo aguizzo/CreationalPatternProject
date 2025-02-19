@@ -6,9 +6,9 @@ import domain.classes.Warrior;
 import domain.classes.impl.humans.HumanArcher;
 import domain.classes.impl.humans.HumanMage;
 import domain.classes.impl.humans.HumanWarrior;
-import domain.factories.SquadronFactory;
+import domain.factories.SquadronAbstractFactory;
 
-public class HumanSquadronFactory extends SquadronFactory {
+public class HumanSquadronFactory extends SquadronAbstractFactory {
     @Override
     public Mage createMage() {
         return new HumanMage();

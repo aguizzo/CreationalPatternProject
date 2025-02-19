@@ -1,15 +1,15 @@
 package client;
 
 import domain.classes.impl.Race;
-import domain.factories.SquadronFactory;
+import domain.factories.SquadronAbstractFactory;
 import domain.factories.impl.ElvenSquadronFactory;
 import domain.factories.impl.HumanSquadronFactory;
 import domain.squadron.Squadron;
 
 public class Client {
     public static void main(String[] args) {
-        SquadronFactory elvenFactory = new ElvenSquadronFactory();
-        SquadronFactory humanFactory = new HumanSquadronFactory();
+        SquadronAbstractFactory elvenFactory = new ElvenSquadronFactory();
+        SquadronAbstractFactory humanFactory = new HumanSquadronFactory();
 
         System.out.println(" ===== Elven squad ===== ");
         Squadron elvenSquad = new Squadron();
@@ -28,5 +28,13 @@ public class Client {
                 .setWarrior(Race.HUMAN)
                 .build();
         mixedSquadron.attack();
+
+        System.out.println(" ===== Mixed squad 2 ===== ");
+        Squadron mixedSquadron2 = Squadron.newBuilder()
+                .setArcher(Race.HUMAN)
+                .setMage(Race.HUMAN)
+                .setWarrior(Race.ELF)
+                .build();
+        mixedSquadron2.attack();
     }
 }
