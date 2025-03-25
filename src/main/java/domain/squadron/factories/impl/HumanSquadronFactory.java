@@ -1,4 +1,4 @@
-package domain.factories.impl;
+package domain.squadron.factories.impl;
 
 import domain.classes.Archer;
 import domain.classes.Mage;
@@ -6,7 +6,7 @@ import domain.classes.Warrior;
 import domain.classes.impl.humans.HumanArcher;
 import domain.classes.impl.humans.HumanMage;
 import domain.classes.impl.humans.HumanWarrior;
-import domain.factories.SquadronAbstractFactory;
+import domain.squadron.factories.SquadronAbstractFactory;
 
 public class HumanSquadronFactory extends SquadronAbstractFactory {
     @Override

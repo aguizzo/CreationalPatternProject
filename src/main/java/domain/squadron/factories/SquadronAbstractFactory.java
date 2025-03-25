@@ -1,4 +1,4 @@
-package domain.factories;
+package domain.squadron.factories;
 
 import domain.classes.Archer;
 import domain.classes.Mage;

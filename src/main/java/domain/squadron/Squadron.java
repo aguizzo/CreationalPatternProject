@@ -4,8 +4,8 @@ import domain.classes.Archer;
 import domain.classes.Mage;
 import domain.classes.Warrior;
 import domain.classes.impl.Race;
-import domain.factories.SquadronAbstractFactory;
-import domain.factories.SquadronFactory;
+import domain.squadron.factories.SquadronAbstractFactory;
+import domain.squadron.factories.SquadronFactory;
 
 public class Squadron {
     private Mage mage;

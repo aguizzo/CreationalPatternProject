@@ -1,9 +1,9 @@
 package client;
 
 import domain.classes.impl.Race;
-import domain.factories.SquadronAbstractFactory;
-import domain.factories.impl.ElvenSquadronFactory;
-import domain.factories.impl.HumanSquadronFactory;
+import domain.squadron.factories.SquadronAbstractFactory;
+import domain.squadron.factories.impl.ElvenSquadronFactory;
+import domain.squadron.factories.impl.HumanSquadronFactory;
 import domain.squadron.Squadron;
 
 public class Client {
